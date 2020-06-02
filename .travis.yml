@@ -1,0 +1,13 @@
+language: php
+
+cache:
+    apt: true
+    yarn: true
+    directories:
+        - $HOME/.composer/cache/files
+        - $HOME/.yarn/node_modules
+        - node_modules
+
+script:
+	- git status
+	- git diff
